@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/_storeGrid
+include mixins/_pagination
+
+block content
+  .inner
+    h2 #{title}
+    +storeGrid(stores)
+    +pagination(page, pages, count)

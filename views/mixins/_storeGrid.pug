@@ -1,0 +1,9 @@
+include _storeCard
+
+mixin storeGrid(stores = [], limit = 12)
+  .stores
+    each store, index in stores
+      if index + 1 > limit
+        return
+      else
+        +storeCard(store)

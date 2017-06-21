@@ -1,0 +1,9 @@
+extends layout
+
+include mixins/_storeGrid
+
+block content
+  .inner
+    h2 #{title}
+    h3.subheading Local Stores
+    +storeGrid(stores, 3)
